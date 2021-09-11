@@ -1,0 +1,207 @@
+/* Font Roboto  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto","sans-serif";
+}
+
+html {
+    scroll-behavior: smooth;
+ }
+
+/* Basic Property  */
+
+.flex {
+    display: flex;
+}
+
+.w_100 {
+    width: 100%;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+/* Custome Property */
+.top_bar {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    padding: 0 2rem;
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+
+header ul li {
+    margin: 0.5rem;
+}
+
+header ul li a {
+    color: #e5e5e5;
+    font-weight: bold
+}
+
+header nav {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+}
+
+.my_profile {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.my_profile img {
+    width: 50%;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    animation: scale 4s ease-in-out infinite;
+    position: relative;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocks {
+    width: 50%;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #adadad;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px 1px #80808070;
+    animation: coloring 4s ease-in-out infinite;
+}
+
+.con_profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    width: 100%;
+}
+
+.profile {
+    background-color: white;
+    width: 15%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: -7rem;
+}
+
+.pp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+}
+
+.mt1 {
+    margin-top: 2rem;
+}
+
+.blocks_education {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks_education img {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.intro h1 {
+  background: -webkit-linear-gradient(#e94e73, #2da0d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animation script */
+@keyframes scale {
+    0% { 
+        bottom: 80px;
+    }
+    49% { 
+           bottom: 15px;
+    }
+    50% {
+          bottom: 15px;
+    }
+    99% { 
+          bottom: 80px;
+    }
+    100% {
+      bottom: 80px;
+    } 
+  }
+  
+  @keyframes coloring {
+    0% { 
+        box-shadow: 0 0 5px 1px #bd5290;
+    }
+    49% { 
+           box-shadow: 0 0 5px 1px #d55186;;
+    }
+    50% {
+        box-shadow: 0 0 5px 1px #23abd0;
+    }
+    99% { 
+        box-shadow: 0 0 5px 1px #9867a1;
+    }
+    100% {
+        box-shadow: 0 0 5px 1px #d55186;;
+    } 
+  }
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
