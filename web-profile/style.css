@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand","Roboto";
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 0px 11px 4px #5c5c5c;
+    background-color: #011124;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+
+div.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo span {
+    color: #ffffff;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.photo img {
+    width: 50%;
+    margin-top: 2rem;
+    border-radius: 50%;
+    border: 7px solid #16293f;
+}
+
+#content {
+    width: 80%;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials a {    
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #192b41;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    margin: 0.2rem;
+    transition: 0.2s ease-out;
+    position: relative;
+}
+
+.socials a:hover {
+    background-color: #5d84b2;
+    transition: 0.3s ease-in;
+    bottom: 2px;
+}
+
+#sidebar ul {
+    padding: 0 1.5rem;
+    margin: 2rem 0;
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    margin-bottom: 1.5rem;
+}
+
+#sidebar ul a {
+    text-decoration: none;
+    color: #5d84b2;
+    font-weight: bold;
+
+}
+
+#sidebar ul li a svg {
+    margin-right: 1rem;
+}
+
+#sidebar ul a {
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+
+
+#sidebar ul a:hover {
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+#sidebar ul a[tabindex]:focus {
+    color: white;
+}
+
+#content {
+    /* padding: 1.5rem; */
+}
+
+#home {
+    position: relative;
+}
+
+.home {
+    background-image: url('cikuray.JPG');
+    height: 100vh;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#home  span {
+    position: absolute;
+    bottom: 75vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    width: 100%;    
+    color: #0d4792;
+    text-shadow: 0 5px 5px #196bcf;
+    font-family: "Lilita One";
+    opacity: 0.3;
+}
+
+.profilePhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.menus {
+    padding: 1rem;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5d84b2
+}
+
+.title h1::after {
+    content: "";
+    background-color: red;
+    border: 2px solid;
+    display: flex;
+    width: 80px;
+    margin-top: 0.5rem;
+}
+
+#about ul {
+    padding: 1rem 0;
+    color: #44658c;
+}
+
+#about ul li {
+    display: flex;
+    padding: 1rem 0.5rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    border: 2px solid;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#about ul li span:nth-child(1) {
+    width: 200px;
+}
+
+.interest {
+    display: flex;
+    position: relative;
+    right: 200px;
+}
+
+.interest li {
+    margin: 0 0.2rem!important;
+}
+
+.list-education {
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
+
+.list-education h4 {
+    margin-bottom: 0.5rem;
+    padding: 0 1rem ;
+    border-left: 2px solid #51749f;
+}
+
+.list-education h4:nth-child(1) {
+    border: transparent;
+}
+
+
+.list-education h4 span {
+    position: relative;
+    top: 20px;
+    color: #5d84b2;
+    font-weight: bold;
+}
+
+.list-education h4::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: flex;
+    border-radius: 3.5rem;
+    background-color: #1f4c82;
+    position: relative;
+    right: 24px;
+    top: 36px;
+}
+
+.list-education .resume-item {
+    padding: 1.5rem 1rem;
+    border-left: 2px solid #51749f;
+}
+
+.resume-item h5 {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: 2px solid #4e729b;
+    color: #4e729b;
+    margin-bottom: 0.5rem;
+}
+
+.list-exp img {
+    padding: 1.5rem 0;
+    width: 25%;
+}
