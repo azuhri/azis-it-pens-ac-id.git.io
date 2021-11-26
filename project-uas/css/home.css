@@ -1,0 +1,2094 @@
+/* fonts */
+    /* montserat */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    /* Poopins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
+    /* Quicksand */
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    transition: all 1s ease-in-out;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', 'Quicksand','sans-serif';
+}
+
+
+/* Style Header */
+header {
+    width: 100%;
+    display: flex;
+    padding: 3rem;
+    box-shadow: 1px 1px 3px 0.5px #cdcaca;
+    position: fixed;
+    z-index: 9999999;
+    background-color: #ffffff;
+}
+
+.scroll {
+    box-shadow: 1px 1px 3px 0.5px #cdcaca;
+    transition: all 1s ease-in-out 0s;
+}
+
+.logo {
+    flex-basis: 30%;
+    /* background-color: red; */
+}
+
+.logo2 {
+    width: 30%;
+    position: absolute;
+    z-index: 100;
+    left: 12rem;
+    top: 3.5rem;
+    margin-top: -5rem
+}
+
+.logo2 img {
+    width: 30%;
+} 
+
+.nav {
+    flex-basis: 80%;
+}
+
+.nav ul {
+    display: flex;
+    float: right;
+    padding: 0 5rem;
+}
+
+.nav ul li {
+    padding: 0 2rem;
+    list-style-type: none;
+}
+
+.nav a {
+    /* color: red; */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+    color: #2f2e41;
+}
+
+.nav a:before {
+    content: "";
+    background-color: #f7b73c ;
+    height: 3px;
+    position: relative;
+    top: 2.5rem;
+    visibility: visible;
+    transition: all 1s ease-in-out 0s;
+    width: 0%;
+}
+
+.active a:before {
+    content: "";
+    background-color: #f7b73c ;
+    height: 3px;
+    position: relative;
+    top: 2.5rem;
+    visibility: visible;
+    width: 100%;
+}
+
+.nav ul li a:hover:before{
+    visibility: visible;
+    width: 100%;
+    transition: 1s;    
+}
+
+/* Style main  */
+#banner {
+    width: 100%;
+    padding: 15rem;
+    background: url('../img/asset/png/cover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-banner {
+    width: 100%;
+    display: flex;
+}
+
+.photo , .desc {
+    flex-basis: 50%;
+}
+
+.photo {
+    /* background-color: red; */
+}
+
+.photo img {
+    width: 100%;
+    float: right;
+    animation: gedeKecil 3s infinite ease-in-out;
+}
+
+@keyframes goyang {
+    10%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes gedeKecil {
+    0% { transform: scale(1); }
+    49% { transform: scale(0.7); }
+    50% { transform: scale(0.7); }
+    99% { transform: scale(1); }
+    100% { transform: scale(1); } 
+}
+
+
+.desc {
+    /* background-color: red; */
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 12rem;
+}
+
+#cover-desc {
+    width: 90%;
+    margin-left: 5rem;
+    color: #2f2e41;
+}
+
+#cover-desc * {
+    margin-bottom: 1.5rem;
+}
+
+
+.desc p {
+    font-size: 1.6rem;
+}
+
+.desc button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: #0597e9;
+    color: white;
+}
+
+.desc button:hover {
+    background-color: #3870a7;
+}
+
+#digschool {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cover-dgs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: dodgerblue; */
+}
+
+.video-bar {
+    background-color: #2f2e41;
+    height: 30rem;
+    border-radius: 0.5rem;
+}
+
+.playbutton {
+    width: 100%;
+    /* background-color: #63b0fc; */
+    position: absolute;
+    z-index: 10;
+    left: 1rem;
+    top: 88rem;
+    padding: 3rem 3.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.playbutton a:before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    padding: 2rem;
+    background-color: #6cbdea;
+    position: absolute;
+    z-index: -1;    
+    top: 1rem;
+    left: 58.3rem;
+    border-radius: 50%;
+}
+
+.playbutton i {
+    font-size: 5rem;
+    color: white
+}
+
+#icon-play {
+    /* background-color: red; */
+}
+
+.video , .desc-video {
+    width: 55%;
+    /* background-color: red; */
+    margin:0 auto;
+}
+
+#judul-video {
+    padding-top: 3rem;
+    color: #2f2e41;
+}
+
+.desc-video {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'arial';
+    color: #2f2e41;
+}
+
+.desc-video #penjelasan {
+    padding: 3.5rem 0;
+    color: #4e4e5d
+}
+
+.desc-video p {
+    /* text-align: left; */
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#unsur2 {
+    text-align: center;
+    font-size: 1.9rem;
+    padding-bottom: 5rem;
+    color:  #2f2e41;
+}
+
+.icon-layer2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.icon-layer2  img{
+    width: 50%;
+}
+
+.icon-layer2 div {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 4rem;
+    box-shadow: 0px 0px 5px -1px #5a5a5a;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.icon-layer2 div:nth-child(2) {
+    margin: 0 2rem;
+}
+
+.awan img{
+    width: 70%;
+}
+
+#jumlah-siswa {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    background-image: url("../img/asset/png/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-siswa {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 2rem;
+    font-family: arial;
+}
+
+.judul-siswa {
+    padding: 4rem 0;
+    color: white;
+}
+
+.judul-siswa h1 {
+    text-shadow: 9px 2px 15px #000000;
+    /* animation: kedip 1s infinite; */
+}
+
+@keyframes kedip {
+    10%{
+         text-shadow: 9px 2px 15px #ffffff;
+    }
+    50% {
+        text-shadow: none;
+    }
+
+    100% {
+       text-shadow: 9px 2px 15px #ffffff;
+    }
+}
+
+.data-siswa {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.data1 , .data2 {
+    display: flex;
+}
+
+
+.data-siswa h1 {
+    color:#2f2e41;
+}
+
+.data-siswa div {
+    padding: 6rem 4rem;
+    margin: 0 -4.5rem;
+    cursor: pointer;
+}
+
+.data1 div , .data2 div {
+    margin: 0 2rem;
+}
+
+/* .data1 {
+    margin: 2rem 0!important;
+}
+.data2 {
+    margin: 2rem 0!important;
+} */
+
+
+.data-siswa p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #646288;
+    margin-top: 1.2rem;
+}
+
+.sd, .smp, .sma , .smk {
+    background-color: white;
+    border-radius: 1rem;
+    /* box-shadow: 1px 1px 38px 4px #0ebcff; */
+    color: #2f2e41;
+}
+
+#fitur {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.cover-fitur {
+    width: 90%;
+    /* background-color: red; */
+}
+
+.evos h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'arial';
+    color: #2f2e41;
+    padding: 3rem 0;
+}
+
+.evos p {
+    width: 65%;
+    font-size: 1.5rem;
+    color: #4e4e5d;
+    margin: 0 auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.tujuan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.9rem;
+    padding: 3rem;
+    /* background-color: dodgerblue; */
+}
+
+.tujuan #tujuan {
+    font-weight: bold;
+    text-align: center;
+    font-family: arial;
+    color: #2f2e41;
+}
+
+.cover-icon-tujuan {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+
+
+.icon-tujuan {
+    display: flex;
+    margin-top: 2rem;
+
+}
+
+.icon-tujuan p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-family: arial;
+    color: #2f2e41;;
+}
+
+.icon-tujuan div {
+    padding: 3rem 4rem;
+    /* margin: 0 0.5rem; */
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 1px 1px 4px 1px #8d8d8d;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.iconB1 , .iconB2 {
+    box-shadow: none!important;
+    display: flex;
+}
+
+.iconB1 {
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+
+.iconB2 {
+    padding-left: 0!important;
+    padding-right: 0!important;
+
+}
+
+.iconB1 {
+    float: right;
+}
+
+.platform, .daring , .monitoring , .digitalisasi-sekolah {
+    width: 50%;
+    text-align: center;
+  
+}
+
+.icon-tujuan img {
+    margin: 0 auto;
+}
+
+.platform img {
+    width: 35%;
+}
+
+.daring img {
+    width: 70%;
+}
+
+.monitoring img {
+    width: 80%;
+}
+
+.digitalisasi-sekolah img {
+    width: 70%;
+}
+
+#user {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.cover-user {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.judul-user h1 {
+    padding-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: arial;
+    color: #2f2e41;
+}
+
+.judul-user p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-bottom: 4rem;
+}
+
+.button-bg {
+    background-color: #f7b73c!important;
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonUser {
+    background-color: #2490cf;
+    transition: all 0.5s ease-in-out;
+}
+.button-user button {
+    padding: 1.5rem;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    outline: none;
+    box-shadow: 1px 1px 10px 1px #928b8b91;
+}
+
+.button-user button:nth-child(2) {
+    margin: 0 2rem;
+}
+
+.button-user button:hover {
+    background-color: #f7b73c;
+    transition: all 0.5s ease-in-out;
+}
+
+#desc-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.desc-user-cover {
+    width: 75%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.desc-user-cover img {
+    float: right;
+    height: 60%;
+    padding-right: 2rem;
+}
+
+.penjelasan-user h1 {
+    font-size: 3rem;
+    font-family: arial;
+    font-weight: bolder;
+    color: #2f2e41;
+}
+
+.penjelasan-user p {
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.user-siswa {
+    width: 100%;
+}
+
+.user-siswa p {
+    margin-left: 2rem;
+}
+
+.penjelasan-user {
+   padding-top: 2rem;
+}
+
+.penjelasan-user h1 {
+    margin-bottom: 3rem;
+}
+
+.penjelasan-user * {
+    margin-bottom: 1rem;
+}
+
+.user-siswa div {
+    display: flex;
+}
+
+.user-siswa div:before {
+    content: " ";
+    padding: 0.5rem;
+    background-color: #f7b73c ;
+    height: 1px;
+    position: relative;
+    z-index: 10;
+    top: 0.8rem;
+    border-radius: 50%;
+}
+
+#fitur-utama {
+    margin-top: -15rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cover-fitur-utama {
+    margin-top: -125rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover-fitur-utama h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: arial;
+    font-weight: bolder;
+    color: #2f2e41;
+}
+
+.cover-fitur-utama div {
+    display: flex;
+}
+
+.cover-fitur-utama div img {
+    width: 30%;
+}
+
+.cover-fitur-utama p {
+    font-weight: bolder;
+    font-size: 1.8rem;
+    padding-top: 3rem;
+}
+
+/* fitur Kelasku */
+#cover-kelasku {
+    padding: 0;
+    padding-top: 8rem;
+}
+
+.kelasku span h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: arial;
+    text-align: left;
+}
+.kelasku span p {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+/* fitur ulanganku */
+.ulanganku span {
+    margin-left: 2rem;
+}
+
+#cover-ulanganku {
+    padding: 0;
+    padding-top: 8rem;
+}
+
+.ulanganku span h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: arial;
+    text-align: left;
+}
+.ulanganku span p {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+/* fitur rapotku */
+#cover-rapotku {
+    padding: 0;
+    padding-top: 8rem;
+}
+
+.rapotku span h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: arial;
+    text-align: left;
+}
+.rapotku span p {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+/* fitur obrolan kita */
+.obrolankita span {
+    margin-left: 2rem;
+}
+
+#cover-obrolankita {
+    padding: 0;
+    padding-top: 8rem;
+}
+
+.obrolankita span h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: arial;
+    text-align: left;
+}
+.obrolankita span p {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+/* fitur rapotku */
+#cover-perpuskita {
+    padding: 0;
+    padding-top: 8rem;
+}
+
+.perpuskita span h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: arial;
+    text-align: left;
+}
+.perpuskita span p {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+/* fitur obrolan kita */
+.ranselku span {
+    margin-left: 2rem;
+}
+
+#cover-ranselku {
+    padding: 0;
+    padding-top: 8rem;
+}
+
+.ranselku span h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: arial;
+    text-align: left;
+}
+.ranselku span p {
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+/* Slide user  */
+.siswa {
+    opacity: 0;
+}
+
+.guru {
+    position: relative;
+    z-index: 2000;
+    top: -64rem;
+    opacity: 0;
+}
+
+.ortu {
+    position: relative;
+    z-index: 3000;
+    top: -128rem;
+    opacity: 0;
+    /* display: none; */
+}
+
+.opacity {
+    opacity: 1!important;
+    transition: all 1s ease-in-out 0s;
+}
+
+.btnUserActive {
+    background-color: #f7b73c!important;
+}
+
+#proses {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.cover-proses {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.judul-proses h1{
+    text-align: center;
+    color: #2f2e41;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.gallery div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery div img {
+    width: 30%;
+    padding: 2px;
+    border: 1px solid #0070dd80;
+}
+
+#review {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/SVG/Testimoni.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#review h1 {
+    padding: 4rem 0;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.cover-review {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.photo-reviewer, .status {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+}
+.reviewer .photo-reviewer img {
+    width: 50%;
+}
+
+.nama {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.status p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    letter-spacing: 0.1rem;
+}
+
+.isi p {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bulet {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.bulet div {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.bulet div span {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.buletActive {
+    background-color: #f7b73c!important;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+#timKami {
+    margin: 5rem 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.coverTim {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.coverTim div {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coverTim .dev div {
+    width: 96%;
+}
+.coverTim .dev div * {
+    margin: 0 auto;
+}
+
+.coverTim img {
+    width: 70%;
+}
+
+#timKami h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: arial;
+    color: #2f2e41;
+}
+
+.bar {
+    box-shadow: 1px 1px 8px 1px #a3a3a3;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 45%);
+}
+
+.bar h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f2e41;
+    font-family: arial;
+    padding-bottom: 0.2rem;
+}
+
+.bar p {
+ font-size: 1.1rem;
+ color: #2f2e41;
+ font-weight: bold;
+ font-family: 'Quicksand';
+ justify-content: center;
+ display: flex;
+ flex-direction: column;
+}
+
+.bar span {
+    padding-top: 0.5rem;
+}
+
+.bar p:before {
+    content: "";
+    border-bottom: 0.2rem solid #2f2e41;
+    padding: 0.1rem 0px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+div.sosmed {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5.5rem;
+    padding-top: 1rem;
+}
+
+.sosmed a i{
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    color: #2f2e41;
+}
+
+.sosmed a i:hover {
+    color: #2992d0;
+}
+
+.photo1 {
+  position: relative;
+  top: 1.8rem;
+  z-index: -99;
+}
+
+#kontakKami {
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form {
+    display: flex;
+}
+
+.container-form div.alamat ,
+.container-form div.form {
+    flex-basis: 50%;
+}
+
+.alamat div {
+    display: flex;
+}
+
+.alamat div .descLokasi {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconLokasi i {
+    color: #2f2e41;
+}
+
+.loc i {
+    font-size: 7rem;
+    margin: 0 auto;
+}
+
+.mail i {
+    font-size: 5rem;
+    margin: 0 auto;
+}
+
+.hp i {
+    font-size: 7rem;
+    margin: 0 auto;
+}
+
+
+.alamat div {
+    padding-bottom: 2rem;
+}
+
+.judulKontak h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color: #2f2e41;
+    font-family: arial;
+    font-weight: bold;
+    padding-bottom: 2.5rem;
+
+}
+
+.descLokasi h1 {
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    font-family: arial;
+    font-weight: bold;
+    color: #2f2e41;
+}
+
+.descLokasi p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f2e41;
+    font-family: 'Quicksand';
+    margin-top: 5px;
+}
+
+.lokasi .iconLokasi {
+    flex-basis: 25%;
+}
+
+.lokasi .descLokasi {
+    flex-basis: 75%;
+}
+
+.email .iconLokasi {
+    flex-basis: 25%;
+}
+
+.email .descLokasi {
+    flex-basis: 75%;
+}
+
+.telpon .iconLokasi {
+    flex-basis: 25%;
+}
+
+.telpon .descLokasi {
+    flex-basis: 75%;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form div {
+    display: flex;
+}
+
+.form form input {
+    margin: 0.2rem;
+}
+
+.inputNama {
+    margin-bottom: 1rem;
+}
+
+.inputNama *{
+    flex-basis: 50%;
+}
+
+.subjek *, 
+.pesan *{
+    flex-basis: 100%;
+}
+
+.subjek {
+    margin-bottom: 1rem;
+}
+
+.subjek input[type="text"] {
+    padding: 1.3rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #2f2e41;
+    font-weight: bold;
+    color: #2f2e41;;
+}
+
+.pesan input[type="text"] {
+    padding: 1rem 1.3rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #2f2e41;
+    font-weight: bold;
+    color: #2f2e41;
+    margin-bottom: 2.5rem;
+    padding-bottom: 9rem;
+
+}
+
+.form input[placeholder] {
+    font-family: "Quicksand";
+    font-weight: bold;
+    color: #2f2e41;
+}
+
+.inputNama input[type="text"] {
+    padding: 1.3rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #2f2e41;
+    font-weight: bold;
+    color: #2f2e41;;
+}
+
+.buttonPesan {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonPesan button {
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    background-color:  #f7b73c;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonPesan button:hover {
+    background-color: #d59c2f;
+}
+
+
+.shadow {
+    box-shadow: -197px 92px 209px 58px #000000db;
+    transition: 1s!important;
+}
+
+
+
+
+/* Style footer */
+
+footer {
+    width: 100%;
+    background-color: #2f2e41;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+}
+
+.bannerFooter {
+    width: 90%;
+    padding: 1.8rem 0;
+}
+
+.bannerFooter p {
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    letter-spacing: 0.1rem;
+}
+
+.isi {
+    margin-top: 1rem;
+}
+
+
+/* Effect slide apa kata mereka */
+.reviewer2 {
+    position: relative;
+    z-index: 10;
+    margin-top: -332px;
+    /* right: 110rem; */
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.reviewer3 {
+    position: relative;
+    z-index: 10;
+    margin-top: -332px;
+    /* right: 110rem; */
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.reviewer4 {
+    position: relative;
+    z-index: 10;
+    margin-top: -265px;
+    /* right: 110rem; */
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.reviewer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    opacity: 0;
+    /* right: 110rem; */
+    transition: 0.5s;
+}
+
+.rightSlide {
+    right: 0rem!important;
+}
+
+
+
+
+
+/* Content yang dihilangkan di website prefix */
+.hMobile {
+    display: none;
+}
+
+#fUtamaMobile {
+    display: none;
+}
+
+
+
+
+
+
+
+/* Responsive Media Query */
+@media screen and (max-width: 1220px) {
+    #cover-desc {
+        width: 91%;
+    }
+
+    .playbutton {
+        left: 7px;
+        top: 85rem;
+    }
+
+    .playbutton a:before {
+        left: 55.3rem;
+    }
+
+    .judul-user h1 {
+        font-size: 3.45rem;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    /* Content yang dihilangkan di mobile prefix */
+    header {
+      display: none;
+    }
+
+    #fitur-utama {
+        display: none;
+    }
+
+    * {
+        overflow-x: hidden;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .hMobile {
+        display: flex;
+        position: fixed;
+        z-index: 9999;
+        background-color: #ffffff;
+        box-shadow: 5px -3px 13px 2px #212121;
+    }
+
+    .hMobile  {
+        overflow-y: hidden;
+
+    }
+    .hMobile * {
+        overflow-y: hidden;
+    }
+    
+    .logoMobile {
+        display: flex;
+        width: 50%;
+    }
+
+    .logoMobile img {
+        width: 50%;
+    }
+
+    .hamburger {
+        left: 125px;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        width: 30%;
+    }
+
+    .hamburger i {
+        font-size: 4rem;
+        color: #6cbdea;;
+        float: right;
+    }
+
+    .menu {
+        position: fixed;
+        z-index: 100;
+        display: flex;   
+        width: 60%;   
+        height: 100vh;
+        background-color: white;
+        top: 110px;
+        right: -500px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out 0s;
+        /* box-shadow: -102px 124px 161px 58px #242424; */
+    }
+
+    .hClick {
+        right: 0!important;
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    .menu nav {
+        width: 100%;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        list-style-type: none;
+        padding: 4rem 0;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #2f2e41;
+        font-family: arial;
+        padding-left: 0.5rem;
+    }
+
+     #silang {
+        font-size: 45px;
+        position: fixed;
+        left: 325px;
+        top: 30px;
+        color: dodgerblue;
+        display: none;
+    }
+
+    #iconHam {
+        display: none;
+    }
+
+    .close {
+        display: flex!important;
+    }
+
+    #banner {
+        margin-bottom: 10rem;
+        margin-top: 10rem;
+        padding: 0;
+        background-image: none;
+    }
+
+    .cover-banner {
+        flex-direction: column;
+    }
+
+    #cover-desc {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .desc {
+        padding-top: 0;
+    }
+
+    .desc p {
+        font-size: 2rem;
+    }
+
+    .desc button {
+        margin: 0 auto;
+        width: 35%;
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+    }
+
+    #cover-desc * {
+        text-align: center;
+    }
+
+    .video, .desc-video {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cover-dgs {
+        width: 95%;
+    }
+
+    .desc-video p {
+        font-size: 1.9rem;
+    }
+
+    #unsur2 {
+        font-size: 2.5rem;
+    }
+
+    .data-siswa div {
+        margin: 0.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .data1, .data2 {
+        flex-direction: column;
+    }
+    
+    .cover-siswa {
+        width: 100%;
+    }
+
+    .evos p {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .icon-tujuan {
+        flex-direction: column;
+        padding-right: 1rem;
+    }
+
+    /* .cover-fitur {
+        width: 100%;
+    } */
+    .icon-tujuan div {
+        margin: 0rem 0.5rem;
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+
+    .icon-layer2 div {
+        padding: 1.5rem;
+        width: 30%;
+    }
+
+    .tujuan * {
+        margin: 1rem 0;
+    }
+
+    .cover-user {
+        width: 90%;
+    }
+
+    .button-user button {
+        width: 30%;
+        padding: 1.5rem;
+    }
+
+    .desc-user-cover img {
+        width: 100%;
+    }
+
+    .desc-user-cover {
+        width: 90%;
+    }
+
+    .ilus {
+        display: flex;
+    }
+
+    .penjelasan-user {
+        padding: 1rem;
+    }
+
+    .penjelasan-user p {
+        font-size: 1.1rem;
+    }
+
+    .guru {
+        top: -41rem;
+    }
+
+    .ortu {
+        top: -84rem;
+    }
+
+    #fUtamaMobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -75rem;
+        margin-bottom: 8rem;
+    }
+
+    #fUtamaMobile .fKeunggulanM {
+        color: #2f2e41;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        margin: 4rem 0;
+        font-family: arial;
+    }
+
+    .coverFiturMobile {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kelaskuM {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kelaskuM .ilusM {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ilusM img {
+        width: 50%;
+    }
+
+    .h1M h1 {
+        color: #2f2e41;
+        font-weight: bold;
+        text-align: center;
+        font-family: arial;
+        font-size: 3rem;
+    }
+
+    .descM {
+       font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+     }
+
+     .cover-proses {
+         width: 95%;
+     }
+
+     .gallery div {
+         flex-direction: column;
+     }
+
+     .gallery div img {
+         width: 100%;
+         margin: 0 auto;
+     }
+
+     .cover-review {
+         width: 100%;
+     }
+
+     .coverTim {
+         flex-direction: column;
+         width: 70%;
+     } 
+
+     .bar h2 {
+         font-size: 2.5rem;
+     }
+
+     .bar p {
+         font-size: 1.6rem;
+     }
+
+     .bar {
+         padding-top: 4rem;
+     }
+
+     .photo1 {
+         top: 7.5rem;
+     }
+
+     .sosmed a i {
+         font-size: 3rem;
+     }
+
+     #kontakKami {
+         margin-bottom: 5rem;
+     }
+
+     .container-form {
+         flex-direction: column;
+     }
+
+     .playbutton {
+         top: 850px;
+     }
+
+     .playbutton a:before {
+         left: 165px;
+     }
+
+     .iconLokasi img {
+         width: 70%;
+     }
+
+     .form input[placeholder] {
+         font-size: 12px;
+     }
+
+     .photo {
+        background: url('../img/SVG/Revis.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+     }
+
+     .menu ul li a {
+         font-size: 2rem;
+     }
+
+     .menu ul li {
+         padding: 3.7rem 0;
+     }
+
+     .desc-user-cover img {
+         height: 90%;
+     }
+
+     .tujuan {
+         padding: 0;;
+     }
+
+     .coverTim div {
+        padding-bottom: 2rem;
+     }
+
+     .coverTim {
+         width: 90%;
+     }
+
+     .bulet {
+        margin-top: 36rem;
+     }
+
+     .reviewer2 {
+        top: 12rem;
+     }
+
+     .reviewer3 {
+        top: 23rem;
+     }
+
+     .reviewer4 {
+         top: 30rem;
+     }
+
+     
+
+     
+}
+
+@media screen and (max-width: 420px) {
+    
+    #silang {
+        left: 347px;
+
+    }
+
+    .hamburger i {
+        padding-right: 40px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        left: 145px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 380px) {
+    #silang {
+        left: 299px;
+        top: 24px;
+    }
+
+    .menu {
+        top: 100px;
+    }
+
+    .desc button {
+        width: 40%;
+    }
+
+    .playbutton {
+        top: 800px;
+    }
+
+    .playbutton a:before {
+        left: 140px;
+    }
+
+    .komunikasi img {
+        width: 80%;
+    }
+
+    .awan img {
+        width: 80%;
+    }
+
+    .judul-user h1 {
+        font-size: 3.2rem;
+    }
+
+    .button-user button {
+        width: 29%;
+    }
+
+    .button-user button {
+        width: 90%;
+    }
+
+    .penjelasan-user {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .button-user {
+        display: flex;
+    }
+
+    .form input[placeholder] {
+        font-size: 10px;
+    }
+
+    .desc-user-cover {
+        width: 95%;
+    }
+
+    .desc-user-cover img {
+        width: 100%;
+    }
+
+    .guru {
+    top: -345px;
+
+    }
+
+    .ortu {
+        top: -655px;
+    }
+
+    .bulet div span {
+        box-shadow: none;
+    }
+
+    .playbutton a:before {
+        display: none;
+    } 
+
+
+
+
+
+}
+
+@media screen and ( max-width:360px ) {
+   
+    .hamburger i {
+        padding-right: 75px;
+    }
+
+    
+    .playbutton a:before {
+        display: flex;
+    } 
+
+
+}
+
+@media screen and ( max-width: 415px) {
+
+    .menu ul li a {
+      font-size: 2.5rem;
+
+    }
+
+    .menu ul li {
+        padding: 3rem 0;
+      text-align: center;
+    }
+
+    .ortu {
+        top: -505px;
+    }
+
+    .guru {
+        top: -250px;
+    }
+
+    #fUtamaMobile {
+        margin-top: -55rem;
+    }
+
+    .hamburger {
+        left: 120px;
+    }
+
+
+}
+
+
+
+@media screen and ( max-width: 360px ){
+
+    .menu ul li {
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        font-size: 2rem;
+    }
+
+    .guru {
+        top: -265px;
+    }
+
+    .ortu {
+        top: -525px;
+    }
+
+    .hamburger i {
+        font-size: 3.5rem;
+    }
+
+    #silang  {
+        font-size: 40px;
+        left: 303px;
+        top: 27px
+    }
+
+    .hamburger {
+        left: 120px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+    #silang {
+        left: 275px;
+        top: 19px;
+    }
+
+    .menu {
+        top: 82px;
+    }
+
+    .desc button {
+        width: 46%;
+    }
+
+    .playbutton a:before {
+        left: 120px;
+    }
+
+    .data-siswa p {
+        font-size: 1.1rem;
+    }
+
+    .button-user button:nth-child(2) {
+        margin: 0 1rem;
+    }
+
+     .siswa .penjelasan-user p {
+        font-size: 1rem;
+    }
+
+    .guru {
+        top: -290px;
+    }
+
+    .guru .penjelasan-user p {
+        font-size: 1.2rem;
+    }
+
+    .ortu {
+        top: -600px;
+    }
+
+    
+
+
+
+   
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 1600px ) {
+    .logo2 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        top: 2rem;
+    }
+    
+    .desc {
+        display: flex;
+        align-items: center;
+        padding-top: 0rem;
+    }
+
+    .video-bar {
+        height: 35rem;
+    }
+
+    .playbutton {
+        top: 105rem;
+    }
+
+    .playbutton a:before {
+        left: 74.3rem;
+    }
+
+    footer {
+        position: fixed;
+    }
+
+    .inputWithicon {
+        top: 3rem;
+        position: relative;
+    }
+
+    footer {
+        position: relative!important;
+    }
+
+
+
+}

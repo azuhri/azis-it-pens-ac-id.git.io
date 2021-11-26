@@ -1,0 +1,30 @@
+
+
+
+
+/* Style footer */
+
+footer {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: #2f2e41;
+    display: flex;
+    justify-content: center;
+}
+
+.bannerFooter {
+    width: 100%;
+    padding: 0.7rem 0
+}
+
+.bannerFooter p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    letter-spacing: 0.1rem;
+}
+
+

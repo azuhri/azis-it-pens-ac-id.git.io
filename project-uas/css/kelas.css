@@ -1,0 +1,875 @@
+/* fonts */
+    /* montserat */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    /* Poopins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    /* Quicksand */
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+
+}
+
+
+body {
+    font-family: 'Poppins', 'Quicksand','sans-serif';
+}
+
+
+/* Style Header */
+#main {
+    display: flex;
+    flex-direction: column;
+    /* height: 90vh; */
+    /* background-color: skyblue; */
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    box-shadow: 1px 1px 7px -1px #6e6e6e;
+}
+
+.logo {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 45%;
+}
+
+.profil {
+    flex-basis: 75%;
+    /* display: flex; */
+}
+
+.profil button {
+    width: 20%;
+    height: 50%;
+}
+
+.coverProfil {
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+
+.profil img {
+    width: 50%;
+    padding: 0 0.5rem;
+    border-radius: 100%;
+    height: 55%;
+}
+
+.profil p {
+    /* margin-right: 2rem; */
+    font-size: 1.5rem;
+    font-family: 'Quicksand';
+}
+
+.profil i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.photoF {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* End Style Header */
+
+
+/* Style Main Content */
+.mainContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/perpusbaru/4x/bgperpus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.coverNav {
+    width: 15%;
+    /* height: 100%; */
+    background-color: #6CBDEA;
+}
+
+.Nav {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 50%;
+}
+
+.Nav ul {
+    padding: 5rem 0;
+}
+
+.Nav ul li { 
+    margin: 3rem 0;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+.Nav ul li:hover {
+    background-color: #F7B73C;
+}
+
+.Nav ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.info {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 22rem;
+
+}
+
+.card-tittle p {
+    margin-bottom: 1rem!important;
+}
+
+.banner {
+    width: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    padding: 10rem;
+    /* background-color: dodgerblue; */
+    /* height: 25%; */
+    display: flex;
+    justify-content: center;
+    border-radius: 10%;
+    background-image: url("../img/kelas/bannerNav.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.coverBanner {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner p {
+    font-size: 2rem;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+/* Section Seacrh */
+
+.data {
+    height: 75%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 3px 1px #a4a4a4;
+    border-radius: 0.5rem;
+    height: 5rem;
+    background-color: #ffffff;    
+    /* padding-bottom: 2rem; */
+    /* align-items: center; */
+}
+
+.search div{
+    width: 30%;
+
+}
+
+.search p {
+    font-size: 1.5rem;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.search i {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.upload p {
+    margin-bottom: 0!important;
+}
+
+.card-tittle p {
+    margin: 1rem 0!important;
+}
+.inputBuku button {
+    border: none;
+    outline: none;
+}
+
+.inputBuku , .list, .upload, .join {
+    display: flex;
+    padding: 0 4rem;
+    align-items: center;
+}
+
+.list p, .upload p , .join p{
+    color: #B3B3B3;
+}
+
+.list {
+    width: 35%!important;
+    margin-left: 7rem;
+}
+
+
+.upload i {
+    color: #FF8C1A;
+    font-size: 3rem;
+}
+.uploaded i {
+    color: #FF8C1A;
+    font-size: 3rem;
+}
+
+.upload i:hover {
+    color: #db8128;
+}
+
+.uploaded i:hover{
+    color: #db8128;
+}
+
+.inputBuku i , .list i {
+    background-color: #2490CF;
+    color: white;
+    padding: 5px;
+    border-radius: 0.5rem;
+}
+
+.inputBuku input[type="text"] {
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+    border-bottom: 1px solid gray;
+
+}
+
+.content {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.buku {
+    display: inline-block;
+    flex-direction: column;
+    width: 30%;
+    box-shadow: 1px 1px 6px 1px #cacaca;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    margin: 1rem;
+    background-color: #ffffff;
+
+}
+
+.judulBuku {
+    width: 100%;
+}
+
+.judulBuku h1 {
+    font-size: 2rem;
+    width: 75%
+}
+
+.judulBuku img {
+    float: right;
+    height: 50%;
+    top: -15px;
+    position: relative;
+}
+
+.kategori {
+    /* margin-top: -40px; */
+}
+
+.kategori p {
+    font-size: 1.5rem;
+    background-color: #FF8C1A;
+    color: white;
+    font-weight: bold;
+    width: 60%;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.subJudul p {
+    font-size: 1.5rem;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+.penyumbang {
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.penyumbang .orang {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.penyumbang .tanggal  {
+    display: flex;
+
+}
+
+.tanggal i, .orang i {
+    margin-right: 1rem;
+    background-color: #2490CF;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.penyumbang p {
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #6CBDEA;
+}
+
+.download {
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.download button {
+    padding: 1rem;
+    width: 30%;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    background-color: #2490CF;
+    border: none;
+}
+
+.tugas i {
+    margin: auto 0!important;
+    padding-right: 0.5rem;
+}
+
+
+.download button a {
+    font-weight: bold!important;
+    color: white!important;
+    text-decoration: none;
+}
+
+        /* Popup upload buku */
+
+.formUploadBuku {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #39363661;
+    width: 100%!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.formJoinKelas {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #39363661;
+    width: 100%!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup { 
+    padding: 3rem;
+    width: 35%!important;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.iClose {
+    width: 35%;
+}
+
+.iClose img {
+    width: 40%;
+    cursor: pointer;
+    position: relative;
+    left: 370px;
+    top: -40px;
+
+}
+
+.tClose {
+    width: 35%;
+}
+
+.tClose img {
+    width: 40%;
+    cursor: pointer;
+    position: relative;
+    left: 370px;
+    top: -40px;
+
+}
+
+.join i {
+    color: #FF8C1A;
+    font-size: 3rem;
+}
+
+.popup input {
+    font-weight: bold;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #e4e4e4;
+    color: black;
+}
+
+.popup select {
+    padding: 0.5rem;
+    width: 60%;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.popup input[type="file"] {
+    display: none;
+}
+
+.popup label {
+    /* padding: 6rem 0; */
+    margin-top: 1rem;
+    background-color: #e4e4e4;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.popup button {
+    padding: 1rem;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #FF8C1A;
+    color: white;
+}
+
+.display {
+    visibility: hidden;
+    /* display: none!important; */
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+.urutkan {
+    position: absolute;
+    z-index: 10;
+    bottom: -11.3rem;
+    left: 64rem;
+    background-color: white;
+    padding: 2rem;
+    width: 15%!important;
+    box-shadow: 1px 1px 10px 1px #3b3b3b52;
+    
+}
+
+.urutkan ul li {
+    padding: 1rem 0;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+button {
+    cursor: pointer;
+}
+
+.download button:hover {
+    background-color: #025586;
+}
+
+.activeNav {
+    color: #FF8C1A!important;
+}
+
+.bottomNav a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+.uploadBuku {
+    width: 100%!important;
+    display: flex;
+    flex-direction: column;
+}
+
+.bgNav {
+    background-color: #F7B73C;
+}
+
+.join p {
+    margin-bottom: 0!important;
+}
+
+/* End Style mainContent */
+
+
+
+
+/* Style Footer */
+.bannerFooter p {
+    font-size: 1.5rem!important;
+
+}
+/* Bottom Nav Mobile  */
+.bottomNav {
+    display: none;
+}
+
+/* Media Query Responsive */
+
+@media screen and ( max-width: 500px ) {
+    /* #main {
+        display: none;
+    } */
+
+    html {
+        font-size: 50%;
+    }
+
+    body * {
+        /* overflow-x: hidden!important; */
+
+    }
+
+    .coverNav {
+        display: none!important;
+    }
+
+    .info {
+        width: 100%;
+        padding-bottom: 460px;
+    }
+
+    .logo {
+        display: none!important;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        height: auto!important;
+    }
+
+    .search div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* margin: 1.5rem; */
+    }
+
+.upload{
+    margin-top: -15px;
+}
+
+.join{
+    margin-bottom: 15px;
+}
+
+    .uploadBuku {
+        width: 100%!important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list {
+        width: 100%!important;
+        margin-left: 0!important;
+    }
+
+    .buku {
+        width: 100%!important;
+        margin: 1rem 0!important;
+    }
+
+    .popup {
+        width: 95%!important;
+    }
+
+    .formUploadBuku {
+        margin: 0!important;
+    }
+
+    .bKelas {
+        margin-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .uploadBuku label {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem!important;
+    }
+
+    #inputBuatKelas {
+        width: 100%;
+    }
+
+    #inputDescKelas {
+        width: 100%;
+    }
+
+
+    .iClose img {
+        left: 130px!important;
+       width: 35%;
+       top: 0px;
+    }
+
+    .banner {
+        background-image: url("../img/kelas/bannerNav.png");
+        padding: 4rem;
+    }
+
+    .profil {
+        flex-basis: 100%;
+        padding: 2rem;
+        position: relative;
+        right: -105px;
+    }
+
+    .profil img {
+        width: 75%!important;
+    }
+
+    .coverProfil {
+        width: 100%;
+        height: auto!important;
+        padding-left: 4rem;
+    }
+
+    .coverProfil #bell, 
+    .coverProfil #user,
+    .coverProfil .photoF{
+        margin: 0 auto;
+    }
+
+    .profil p {
+        font-size: 2rem;
+    }
+
+    .profil i {
+        font-size: 2rem;
+    }
+
+    .bottomNav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        z-index: 99999;
+        background-color: #ffffff;
+        padding: 1rem;
+        box-shadow: 1px 1px 16px 2px #38383840;
+        width: 100%;
+    }
+
+    .bottomNav div {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        justify-content: center;
+        text-align: center
+    }
+
+    .bottomNav p {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .bottomNav i {
+        font-size: 1.5rem;
+    }
+
+    .inputBuku , .list , .upload, .uploaded {
+        padding: 2rem ;
+    }
+
+
+    .kategori p {
+        width: 35%;
+    }
+
+    #bell {
+        position: absolute;
+        left: 0;
+        font-size: 4rem;
+    }
+
+    .card-tittle {
+        font-size: x-large;
+    }
+    .h5, h5 {
+        font-size: 2.5rem!important;
+    }
+    p {
+        margin-top: 0;
+    }
+
+    .card-body {
+        font-size: 1.5rem;
+    }
+    
+    .tClose img {
+        left: 147px;
+        top: -10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 420px) {
+    
+    .urutkan {
+        width: 30%!important;
+        bottom: 25rem!important;
+        left: 18rem!important;
+    }
+
+    .profil {
+        right: -23px!important;
+        flex-basis: 95%!important;
+    }
+
+    .iClose img {
+        left: 155px!important;   
+    }
+
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .urutkan {
+        width: 40%!important;
+        bottom: 18rem!important;
+        left: 14rem!important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .urutkan {
+        width: 40%!important;
+        bottom: 14rem!important;
+        left: 13rem!important;
+    }
+
+    .iClose img {
+        left: 140px!important;
+    }
+    
+}
+
+
+@media screen and (max-width: 320px) {
+    .urutkan {
+        width: 40%!important;
+        bottom: 8rem!important;
+        left: 12rem!important;
+    }
+
+    .iClose img {
+        left: 115px!important;
+    }
+}
+
+@media screen and (max-width: 1220px ) {
+    .urutkan {
+        bottom: -21rem;
+        left: 52rem
+    }
+
+    .iClose img {
+        left: 295px;
+    }
+
+}
+

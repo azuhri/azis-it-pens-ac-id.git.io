@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="img/logo.png" rel="icon">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="img/asset/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="img/asset/css/all.css">
+    <link rel="stylesheet" type="text/css" href="img/asset/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="img/asset/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="img/asset/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="img/asset/css/brands.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- CDN CSS DAN JS AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Beranda | E-Volution of School</title>
+</head>
+
+<body>
+
+    <!-- Header mobile -->
+    <div class="hMobile">
+        <div class="logoMobile">
+            <img src="img/logo-horizon.png" alt="">
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars close" id="iconHam"></i>
+            <i class="fas fa-times-circle" id="silang"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#" id="nav1">Beranda</a></li>
+                    <li><a href="#h1Evos" id="nav2">Fitur</a></li>
+                    <li><a href="#h1Proses" id="nav3">Proses Pembuatan</a></li>
+                    <li><a href="#timKami" id="nav4">Tim Kami</a></li>
+                    <li><a href="#kontakKami" id="nav5">Kontak</a></li>
+                    <li><a href="{{route('register')}}" id="nav6">Daftar</a></li>
+                    <li><a href="{{route('login')}}" id="nav7">Masuk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="logo">
+        </div>
+        <div class="logo logo2">
+            <img src="img/logo-horizon.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#" id="nav1">Beranda</a></li>
+                <li><a href="#h1Evos" id="nav2">Fitur</a></li>
+                <li><a href="#h1Proses" id="nav3">Proses Pembuatan</a></li>
+                <li><a href="#timKami" id="nav4">Tim Kami</a></li>
+                <li><a href="#kontakKami" id="nav5">Kontak</a></li>
+                <li><a href="#" id="nav6">Daftar</a></li>
+                <li><a href="#" id="nav7">Masuk</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="cover-banner">
+            <div class="photo">
+                <img src="img/banner.svg">
+            </div>
+            <div class="desc">
+                <div id="cover-desc">
+                    <h1>Belajar Dengan Mudah Dari Rumah</h1>
+                    <p>Bersama E-Volution of School belejar online dari rumah jadi
+                        menyenangkan !
+                    </p>
+                    <button type="button">Mulai Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="digschool">
+        <div class="cover-dgs">
+            <div class="video">
+                <div class="video-bar">&nbsp;</div>
+                {{-- <div class="playbutton">
+                    <a href="https://www.youtube.com/watch?v=GPaFivpz8QI" data-vbtype="video" data-autoplay="true"
+                        id="icon-play">
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div> --}}
+            </div>
+            <div class="desc-video">
+                <h1 id="judul-video">Apa itu digitalisasi sekolah ?</h1>
+                <p id="penjelasan">Digitalisasi sekolah merupakan implementasi dari sistem pembelajaran baru, yang
+                    dipersiapkan untuk menghadapi revolusi industri 4.0.
+                </p>
+                <div class="icon">
+                    <div class="icon-layer1">
+                        <p id="unsur2">Unsur-unsur digitalisasi sekolah :</p>
+                    </div>
+                    <div class="icon-layer2">
+                        <div class="komunikasi">
+                            <img src="img/asset/png/komunikasi.png" alt="">
+                            <p>Perangkat Komunikasi</p>
+                        </div>
+                        <div class="inet">
+                            <img src="img/asset/png/inet.png" alt="">
+                            <p>Jaringan Internet</p>
+                        </div>
+                        <div class="awan">
+                            <img src="img/asset/png/awan.png" alt="">
+                            <p>Komputasi Awan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jumlah-siswa">
+        <div class="cover-siswa">
+            <div class="judul-siswa">
+                <h1>Jumlah siswa Indonesia tahun 2020</h1>
+            </div>
+            <div class="data-siswa">
+                <div class="data1">
+                    <div class="sd">
+                        <h1>25,1 Juta</h1>
+                        <p>Siswa SD</p>
+                    </div>
+                    <div class="smp">
+                        <h1>9,9 Juta</h1>
+                        <p>Siswa SMP</p>
+                    </div>
+                </div>
+                <div class="data2">
+                    <div class="sma">
+                        <h1>4,9 Juta</h1>
+                        <p>Siswa SMA</p>
+                    </div>
+                    <div class="smk">
+                        <h1>5,1 Juta</h1>
+                        <p>Siswa SMK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fitur">
+        <div class="cover-fitur">
+            <div class="evos">
+                <h1 id="h1Evos">Apa itu E-Volution of School?</h1>
+                <p>E-Volution of School merupakan platform pembelajaran daring yang
+                    disiapkan untuk menghadapi revolusi industri 4.0. . Setiap Aspek dari pendidikan
+                    baik Siswa, Guru , maupun orang tua, dapat saling terkoneksi dan langsung memonitoring
+                    kegiatan pembelajaran.
+                </p>
+            </div>
+            <div class="tujuan">
+                <p id="tujuan">Tujuan E-Volution of School :</p>
+                <div class="cover-icon-tujuan">
+                    <div class="icon-tujuan">
+                        <div class="iconB1">
+                            <div class="platform">
+                                <img src="img/asset/png/platform.png" alt="">
+                                <p>Membuat Platform Yang Mudah Diakses</p>
+                            </div>
+                            <div class="daring">
+                                <img src="img/asset/png/daring.png" alt="">
+                                <p>Memfokuskan Pembelajaran daring</p>
+                            </div>
+                        </div>
+                        <div class="iconB2">
+                            <div class="monitoring">
+                                <img src="img/asset/png/monitoring.png" alt="">
+                                <p>Membuat Sistem Monitoring Siswa</p>
+                            </div>
+                            <div class="digitalisasi-sekolah">
+                                <img src="img/asset/png/digital.png" alt="">
+                                <p>Membuat Sistem Digitalisasi Sekolah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="user">
+        <div class="cover-user">
+            <div class="judul-user">
+                <h1>Siapa Yang Membutuhkan Aplikasi ?</h1>
+                <p>Secara umum aplikasi ini di butuhkan oleh Siswa, Guru, dan Orang Tua
+                    untuk itu berikut kelebihan dari masing-masing pengguna
+                </p>
+            </div>
+            <div class="button-user">
+                <button type="button" class="buttonUser btnUserActive">Siswa</button>
+                <button type="button" class="buttonUser">Guru</button>
+                <button type="button" class="buttonUser">Orang Tua</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="desc-user">
+        <div class="desc-user-cover siswa opacity">
+            <div class="ilus">
+                <img src="img/asset/1x/Siswa.png" alt="">
+            </div>
+            <div class="penjelasan-user">
+                <!-- <h1>Siswa :</h1> -->
+                <div class="user-siswa">
+                    <div class="pt1">
+                        <p>Siswa dapat bergabung ke kelas sesuai mata pelajaran menggunakan
+                            kode unik
+                        </p>
+                    </div>
+                    <div class="pt2">
+                        <p>Siswa dapat melihat dan mengerjakan materi, tugas,
+                            dan ulangan yang diberikan guru di setiap kelas
+                        </p>
+                    </div>
+                    <div class="pt3">
+                        <p> Siswa akan mendapatkan notifikasi apabila ada
+                            materi pembelajaran baru pada setiap kelas
+                        </p>
+                    </div>
+                    <div class="pt4">
+                        <p>Siswa dapat mengerjakan dan mengumpulkan tugas
+                            ke guru masing masing kelas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desc-user-cover guru">
+            <div class="ilus">
+                <img src="img/asset/1x/guru.png" alt="">
+            </div>
+            <div class="penjelasan-user">
+                <!-- <h1>Guru :</h1> -->
+                <div class="user-siswa">
+                    <div class="pt1">
+                        <p>Guru dapat membuat dan bergabung ke kelas yang lain.
+                        </p>
+                    </div>
+                    <div class="pt2">
+                        <p>Guru dapat memberikan materi, tugas, serta ulangan dalam setiap kelas.
+                        </p>
+                    </div>
+                    <div class="pt3">
+                        <p>Guru dapat menyunting tugas atau materi dalam kelas secara daring.
+                        </p>
+                    </div>
+                    <div class="pt4">
+                        <p>Guru dapat melihat dan menilai tugas siswa secara langsung.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desc-user-cover ortu">
+            <div class="ilus">
+                <img src="img/asset/1x/ortu.png" alt="">
+            </div>
+            <div class="penjelasan-user">
+                <!-- <h1>Orang Tua :</h1> -->
+                <div class="user-siswa">
+                    <div class="pt1">
+                        <p>Orang tua dapat melihat aktivitas anaknya dalam setiap kelas.
+                        </p>
+                    </div>
+                    <div class="pt2">
+                        <p>Orang tua akan mendapatkan notifikasi tentang proses pembelajaran anaknya
+                            dalam setiap kelas.
+                        </p>
+                    </div>
+                    <div class="pt3">
+                        <p>Orang tua dapat melihat hasil nilai anak yang diberikan guru
+                        </p>
+                    </div>
+                    <div class="pt4">
+                        <p>Orang tua dapat memonitoring lebih dari satu anak
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fitur-utama">
+        <div class="cover-fitur-utama">
+            <h1>Fitur Keunggulan Kami</h1>
+            <div class="kelasku">
+                <span id="cover-kelasku">
+                    <h1>Kelasku</h1>
+                    <p>Ruang untuk kegiatan belajar mengajar akan berlangsung disini. Guru
+                        dapat memberikan pembelajaran, tugas, dan ulangan serta memberikan
+                        penilaian kepada siswa.
+                    </p>
+                </span>
+                <img src="img/kelasku.png" alt="">
+            </div>
+            <div class="ulanganku">
+                <img src="img/ulanganku.png" alt="">
+                <span id="cover-ulanganku">
+                    <h1>Ulanganku</h1>
+                    <p>Ruang bagi siswa untuk mengikuti ujian. Hasil ujian otomatis akan
+                        masuk ke penilaian wali kelas dan guru, serta akan ada notifikasi
+                        hasil untuk orang tua tentang ujian anaknya hari itu.
+                    </p>
+                </span>
+            </div>
+            <div class="rapotku">
+                <span id="cover-rapotku">
+                    <h1>Rapotku</h1>
+                    <p>Ruang untuk Guru dan Wali Kelas menginput dan mengolah nilai siswa, serta
+                        setelah rapot dipublikasikan, orang tua dan siswa akan mendapat notifikasi
+                        bahwa rapot dapat diakses dan diunduh secara daring
+                    </p>
+                </span>
+                <img src="img/rapotku.png" alt="">
+            </div>
+            <div class="obrolankita">
+                <img src="img/obrolanku.png" alt="">
+                <span id="cover-obrolankita">
+                    <h1>Obrolan Kita</h1>
+                    <p>Ruang untuk siswa dan guru untuk saling berkomunikasi di dalam kelas
+                        melalui chat
+                    </p>
+                </span>
+            </div>
+            <div class="perpuskita">
+                <span id="cover-perpuskita">
+                    <h1>Perpus Kita</h1>
+                    <p>Ruang untuk siswa dapat mengunduh, menyumbangkan, dan membaca buku virtual
+                        (e-book) sesuai kategori dan judul buku yang di inginkan.
+                    </p>
+                </span>
+                <img src="img/perpus.png" alt="">
+            </div>
+            <div class="ranselku">
+                <img src="img/ransel.png" alt="">
+                <span id="cover-ranselku">
+                    <h1>Ranselku</h1>
+                    <p>Ruang untuk siswa dan guru menyimpan arsip tugas, data-data, dan materi
+                        pembelajaran secara aman di awan (cloud), serta dapat diunduh kembali jika
+                        dibutuhkan.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="fUtamaMobile">
+        <h1 class="fKeunggulanM">Fitur Keunggulan Kami </h1>
+        <div class="coverFiturMobile">
+            <div class="kelaskuM">
+                <div class="h1M">
+                    <h1>Kelasku</h1>
+                </div>
+                <div class="ilusM">
+                    <img src="img/kelasku.png" alt="">
+                </div>
+                <div class="descM">
+                    <p>Ruang untuk kegiatan belajar mengajar akan berlangsung disini. Guru
+                        dapat memberikan pembelajaran, tugas, dan ulangan serta memberikan
+                        penilaian kepada siswa.</p>
+                </div>
+            </div>
+            <div class="kelaskuM ulangankuM">
+                <div class="h1M">
+                    <h1>Ulanganku</h1>
+                </div>
+                <div class="ilusM">
+                    <img src="img/ulanganku.png" alt="">
+                </div>
+                <div class="descM">
+                    <p>Ruang bagi siswa untuk mengikuti ujian. Hasil ujian otomatis akan
+                        masuk ke penilaian wali kelas dan guru, serta akan ada notifikasi
+                        hasil untuk orang tua tentang ujian anaknya hari itu.</p>
+                </div>
+            </div>
+            <div class="kelaskuM rapotkuM">
+                <div class="h1M">
+                    <h1>Rapotku</h1>
+                </div>
+                <div class="ilusM">
+                    <img src="img/rapotku.png" alt="">
+                </div>
+                <div class="descM">
+                    <p>Ruang untuk Guru dan Wali Kelas menginput dan mengolah nilai siswa, serta
+                        setelah rapot dipublikasikan, orang tua dan siswa akan mendapat notifikasi
+                        bahwa rapot dapat diakses dan diunduh secara daring</p>
+                </div>
+            </div>
+            <div class="kelaskuM obrolankitaM">
+                <div class="h1M">
+                    <h1>Obrolan Kita</h1>
+                </div>
+                <div class="ilusM">
+                    <img src="img/obrolanku.png" alt="">
+                </div>
+                <div class="descM">
+                    <p>Ruang untuk siswa dan guru untuk saling berkomunikasi di dalam kelas
+                        melalui chat</p>
+                </div>
+            </div>
+            <div class="kelaskuM perpuskitaM">
+                <div class="h1M">
+                    <h1>Perpus Kita</h1>
+                </div>
+                <div class="ilusM">
+                    <img src="img/perpus.png" alt="">
+                </div>
+                <div class="descM">
+                    <p>Ruang untuk siswa dapat mengunduh, menyumbangkan, dan membaca buku virtual
+                        (e-book) sesuai kategori dan judul buku yang di inginkan.</p>
+                </div>
+            </div>
+            <div class="kelaskuM RanselM">
+                <div class="h1M">
+                    <h1>Ranselku</h1>
+                </div>
+                <div class="ilusM">
+                    <img src="img/ransel.png" alt="">
+                </div>
+                <div class="descM">
+                    <p>Ruang untuk siswa dan guru menyimpan arsip tugas, data-data, dan materi
+                        pembelajaran secara aman di awan (cloud), serta dapat diunduh kembali jika
+                        dibutuhkan.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="proses">
+        <div class="cover-proses">
+            <div class="judul-proses">
+                <h1 id="h1Proses">Proses Pembuatan Platform</h1>
+            </div>
+            <div class="gallery">
+                <div class="baris1">
+                    <img src="img/asset/dokum/dani1.jpg" alt="">
+                    <img src="img/asset/dokum/azis2.jpg" alt="">
+                    <img src="img/asset/dokum/gideon1.jpeg" alt="">
+                </div>
+                <div class="baris2">
+                    <img src="img/asset/dokum/azis3.jpg" alt="">
+                    <img src="img/asset/dokum/gideon2.jpeg" alt="">
+                    <img src="img/asset/dokum/raihan.jpg" alt="">
+                </div>
+                <div class="baris3">
+                    <img src="img/asset/dokum/azis1.jpg" alt="">
+                    <img src="img/asset/dokum/azis4.jpg" alt="">
+                    <img src="img/adamdoc.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="review">
+        <h1>Apa kata Mereka tentang Evos?</h1>
+        <div class="cover-review">
+            <div class="reviewer reviewer1">
+                <div class="photo-reviewer">
+                    <img src="img/falah.png" alt="">
+                </div>
+                <div class="nama">
+                    <p>Alfalah Lazuardi M.</p>
+                </div>
+                <div class="status">
+                    <p>Backend Programmer Dev.</p>
+                </div>
+                <div class="isi">
+                    <p>"Dengan aplikasi EVOS saya sangat terbantu, karena tidak perlu membuat akun yang banyak, cukup dengan 1 akun, saya bisa mendapatkan
+                        akses untuk pembelajaran daring dengan mudah."</p>
+                </div>
+            </div>
+            <div class="reviewer reviewer2">
+                <div class="photo-reviewer">
+                    <img src="img/ajeng.png" alt="">
+                </div>
+                <div class="nama">
+                    <p>Ajeng Putri M.</p>
+                </div>
+                <div class="status">
+                    <p>Mahasiswi</p>
+                </div>
+                <div class="isi">
+                    <p>"Program Evolution of school ini sangat baik dan pastinya akan membuat
+                        banyak perubahan, baik untuk perorangan maupun instansi, asalkan disertai dengan pemerataan
+                        sarana dan prasarana yang memadai, serta perlunya dukungan dari setiap pihak."</p>
+                </div>
+            </div>
+            <div class="reviewer reviewer3">
+                <div class="photo-reviewer">
+                    <img src="img/yasmin.png" alt="">
+                </div>
+                <div class="nama">
+                    <p>Yasmin Yahya </p>
+                </div>
+                <div class="status">
+                    <p>Siswi</p>
+                </div>
+                <div class="isi">
+                    <p>"Dengan Evos pembelajaran secara daring, jadi lebih mudah dan menyenangkan."</p>
+                </div>
+            </div>
+            <div class="reviewer reviewer4">
+                <div class="photo-reviewer">
+                    <img src="img/warda.png" alt="">
+                </div>
+                <div class="nama">
+                    <p>Warda Tunnisa</p>
+                </div>
+                <div class="status">
+                    <p>Siswi</p>
+                </div>
+                <div class="isi">
+                    <p>"E-Volution of School benar-benar memecahkan permasalahan pembelajaran daring dimasa pandemi ini"</p>
+                </div>
+            </div>
+
+            <div class="bulet">
+                <div class="bulet1 "> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                <div class="bulet2"> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                <div class="bulet3"> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                <div class="bulet4"> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timKami">
+        <h1>Tim Kami</h1>
+        <div class="coverTim">
+            <div class="dev1 dev">
+                <div class="photo1">
+                    <img src="img/adam.png" alt="">
+                </div>
+                <div class="bar">
+                    <h2>M. Adam A.</h2>
+                    <p><span>Mobile Programmer</span></p>
+                    <div class="sosmed">
+                        <a href=""><i class="fas fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dev2 dev">
+                <div class="photo1">
+                    <img src="img/dani.png" alt="">
+                </div>
+                <div class="bar">
+                    <h2>M. Dani Asyrofi</h2>
+                    <p><span>UI/UX Designer</span></p>
+                    <div class="sosmed">
+                        <a href=""><i class="fas fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dev3 dev">
+                <div class="photo1">
+                    <img src="img/azis.png" alt="">
+                </div>
+                <div class="bar">
+                    <h2>Azis Zuhri P.</h2>
+                    <p><span>Frontend Web Dev. (Leader)</span></p>
+                    <div class="sosmed">
+                        <a href=""><i class="fas fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dev4 dev">
+                <div class="photo1">
+                    <img src="img/gideon.png" alt="">
+                </div>
+                <div class="bar">
+                    <h2>Gideon Frans I.</h2>
+                    <p><span>Backend Web Dev.</span></p>
+                    <div class="sosmed">
+                        <a href=""><i class="fas fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dev5 dev">
+                <div class="photo1">
+                    <img src="img/raihan.png" alt="">
+                </div>
+                <div class="bar">
+                    <h2>M. Raihan</h2>
+                    <p><span>Backend Web Dev.</span></p>
+                    <div class="sosmed">
+                        <a href=""><i class="fas fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakKami">
+        <div class="judulKontak">
+            <h1>Kontak Kami</h1>
+        </div>
+        <div class="container-form">
+            <div class="alamat">
+                <div class="lokasi">
+                    <div class="iconLokasi loc">
+                        <i class="fal fa-map-marker-alt"></i>
+                    </div>
+                    <div class="descLokasi">
+                        <h1>Lokasi</h1>
+                        <p>Jl. Balai Pustaka Baru I, RT 02/07 Rawamangun, Kec. Pulo
+                            Gadung, Kota Jakarta Timur, DKI Jakarta, 13220
+                        </p>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="iconLokasi mail">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="descLokasi">
+                        <h1>Email</h1>
+                        <p>evos26jakarta@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="telpon">
+                    <div class="iconLokasi hp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="descLokasi">
+                        <h1>Telepon</h1>
+                        <p>+62 878 8280 9146 (Azis Zuhri)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form action="/kontak" method="post">
+                    @csrf
+                    <div class="inputNama">
+                        <input type="text" name="name" placeholder="Masukan Nama Anda">
+                        <input type="text" name="email" placeholder="Masukan Email Anda">
+                    </div>
+                    <div class="subjek">
+                        <input type="text" name="subjek" placeholder="Masukan Subjek">
+                    </div>
+                    <div class="pesan">
+                        <input type="text" name="pesan" placeholder="Masukan Pesan Anda">
+                    </div>
+                    <div class="buttonPesan">
+                        <button>Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bannerFooter">
+            <p>Since &copy;2020 E-Volution of School</p>
+        </div>
+    </footer>
+
+
+    <script src="js/home.js"></script>
+    <script src="js/slide.js"></script>
+
+</body>
+
+</html>

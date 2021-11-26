@@ -1,0 +1,72 @@
+@keyframes my-animation-left {        
+    from {
+      opacity : 0;
+      left : -500px;
+    }
+    to {
+      opacity : 1;
+      left : 0;
+    }      
+  }
+
+  @keyframes my-animation-right {        
+    from {
+      opacity : 0;
+      right: -50px;
+    }
+    to {
+      opacity : 1;
+      right: 0;
+    }      
+  }
+
+  @keyframes opacity {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
+  .run-animation-left {
+    position: relative;
+    animation: my-animation-left 0.5s ease;
+  }
+
+  .run-animation {
+    position: relative;
+    animation: my-animation-right 0.7s ease-in;
+  }
+
+  .run-animation3 {
+    position: relative;
+    animation: my-animation-left 1.2s ease;
+  }
+
+  .run-animation-o {
+    position: relative;
+    animation: opacity 10s ease;
+  }
+
+  #logo {
+    text-align: center;
+  }
+
+  .animation1 {
+      position: relative;
+      animation: my-animation-left 1s ease;
+  }
+
+  
+  .animation2 {
+    position: relative;
+    animation: my-animation-left 1.3s ease;
+}
+
+
+.animation3 {
+    position: relative;
+    animation: my-animation-left 1.6s ease;
+}
+

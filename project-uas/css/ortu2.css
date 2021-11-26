@@ -1,0 +1,285 @@
+/*GFont*/
+/*Quicksand*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand:400,600,700&display=swap');
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*Open sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+/*Oxygen*/
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue|Girassol|Oxygen&display=swap');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', 'arial';
+	/*border: 1px solid red;*/
+}
+
+
+header {
+	max-width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.cover {
+	max-width: 80%;
+	display: flex;
+	/*margin-right: 400px;*/
+}
+
+.cover img {
+	width: 150px;
+	height: 150px;
+	margin-top: -30px;
+	margin-bottom: -30px;
+	/*margin-left: 50px;*/
+}
+
+.cover {
+	outline: none;
+	border: 0 solid white;
+	background-color:white;
+	cursor: pointer;
+}
+
+.cover ul li {
+	padding-right: 10px;
+	margin-top:30px;
+}
+
+/*Efek box shadow*/
+.card {
+	box-shadow: 0px 2px 4px 0 gray;
+	border: 0px solid white;
+}
+ .alur {
+	width: 100%;
+	/*background-color: red;*/
+	margin-top: 50px;
+	color: blue;
+	display: flex;
+	justify-content: center;
+	margin-left: 35px;
+	
+}
+
+.alur .cover-step {
+	flex-basis: 25%;
+	display: flex;
+	/*background-color: red*/
+}
+
+.display {
+	display: inline-block;
+}
+
+.circle {
+	/*flex-basis: 25%;	*/
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	border: 3px solid #2F97D3;
+}
+
+.step {
+	background-color: white;
+	animation: steps 3s infinite;
+}
+
+@keyframes steps {
+ 	 0% { background-color: #93D0F0; }
+	 25% { background-color: transparent; }
+	 50% { background-color: #93D0F0; }
+	 75% { background-color: transparent; }
+	 100% { background-color: #93D0F0; } 
+}
+
+
+
+.kotak {
+	flex-basis: 25%;
+	margin-top: 12px;
+	margin-left: -2px;
+	border-top: 3px solid #33363B;
+	/*opacity: 0.7;*/
+}
+
+.main {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.cover-main {
+	display: flex;
+	flex-basis: 90%;
+	/*background-color: red;*/
+	justify-content: center;
+}
+
+.photo {
+	flex-basis: 50%
+}
+
+.form {
+	flex-basis: 50%;
+
+}
+
+.form div {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5px;
+}
+
+.photo img {
+	width: 100%;
+}
+
+.title {
+	font-size: 15px;
+}
+
+.form input[type="text"] {
+	border: 0 solid green;
+	border-bottom: 1px solid gray;
+	padding:5px;
+	outline: none;
+	font-weight: bold;
+	color: gray
+}
+
+.form input[type="email"] {
+	border: 0 solid green;
+	border-bottom: 1px solid gray;
+	padding:5px;
+	outline: none;
+	font-weight: bold;
+	color: gray
+}
+
+.form input[type="number"] {
+	border: 0 solid green;
+	border-bottom: 1px solid gray;
+	padding:5px;
+	outline: none;
+	font-weight: bold;
+	color: gray
+}
+
+
+.form select {
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.form button {
+	margin-top: 15px;
+	padding: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-weight: bold;
+	border-radius: 5px;
+	outline: none;
+	border: 0px solid white;
+	background-color: #F86D70;
+	color: white;
+	cursor: pointer;
+
+}
+
+#agreement {
+	font-size: 12px;
+	margin-left: -2px;
+	/*margin-top: -16px;*/
+}
+
+.form input[type="text"]:focus {
+ /*box-shadow: 0 1px 0px 0px #6BBFEB;*/
+ border-bottom: 1px solid #6BBFEB;
+ transition: 0.5s;
+}
+
+.form input[type="number"]:focus {
+ /*box-shadow: 0 1px 0px 0px #6BBFEB;*/
+ border-bottom: 1px solid #6BBFEB;
+ transition: 0.5s;
+}
+
+.form input[type="email"]:focus {
+ /*box-shadow: 0 1px 0px 0px #6BBFEB;*/
+ border-bottom: 1px solid #6BBFEB;
+ transition: 0.5s;
+}
+
+form select:focus {
+	font-weight: bold;
+	color: rgb(248,109,112);
+	transition: 0.5s;
+}
+
+
+footer {
+	margin-top: 145px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	background-color: #424242;
+}
+
+.footer {
+	display: flex;
+}
+
+.footer div {
+	margin: 50px;
+}
+
+.footer ul,
+.footer .contact {
+	margin-left: 100px;
+}
+
+.footer ul li {
+	margin-top: 15px;
+	list-style-type: none;
+}
+
+.footer ul li a:hover {
+	font-weight: bold;
+	color: #C1D1E1;
+	opacity: 0.4;
+}
+
+.footer a  {
+	text-decoration: none;
+	color: white;
+	font-family: Roboto;
+}
+
+.footer p  {
+	text-decoration: none;
+	color: white;
+	font-family: Roboto;
+}
+
+.footer .contact {
+	margin-left: 400px;
+}
+
+
+
+#copyright span {
+	color: white;
+	font-size: 12px;
+	float: right;
+	margin-right: 10px;
+}
+

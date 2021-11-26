@@ -1,0 +1,121 @@
+
+.table {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+table {
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    /* text-align: center; */
+}
+
+table .head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #2490CF;
+}
+
+.table .head td {
+    padding: 1.5rem 1rem;
+}
+
+
+.table td {
+    padding: 1rem 1rem;
+}
+
+.isi td {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: #ffffff;
+    color: #2F2E41;
+}
+
+.aksiC {
+    display: flex;
+    justify-content: center;
+}
+
+.aksiC a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #2490CF;
+}
+
+.aksiC a:hover {
+    text-decoration: underline;
+}
+
+.aksiC i {
+    font-size: 1.7rem;
+    padding-left: 1rem;
+}
+
+.edit a {
+    padding: 0 0.5rem;
+
+}
+
+.coverNav {
+    padding-bottom: 11rem!important;
+}
+
+.banner {
+    background-image: url('../img/perpusbaru/bannerransel.png');
+}
+
+.urutkan {
+    bottom: -2.3rem!important;
+    left: 59rem!important;
+}
+
+@media screen and (max-width: 320px) {
+    .urutkan {
+        bottom: 15.7rem!important;
+        left: 12rem!important;
+    }
+
+    .profil p {
+        font-size: 1.7rem;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+    .urutkan {
+        bottom: 23.7rem!important;
+        left: 12rem!important;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .urutkan {
+        bottom: 33.7rem!important;
+        left: 19rem!important;
+    }
+}
+
+@media screen and (max-width: 500px ) {
+    .mainContent {
+        padding-bottom: 2rem;
+    }
+
+    .aksiC {
+        flex-direction: column;
+    }
+
+    .edit a {
+        padding: 0;
+    }
+
+
+}

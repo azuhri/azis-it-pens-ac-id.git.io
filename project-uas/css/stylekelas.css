@@ -1,0 +1,526 @@
+.containerS {
+    margin: 0 auto;
+    margin-top: 3rem; 
+    display: flex;
+    width: 100%;
+    background-image: url('../img/perpusbaru/4x/bgperpus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerKelas {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 23px 1px #90909075;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    background-image: url(../img/kelas/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.judulKelas {
+    width: 30%;
+    font-size: 2rem;
+    padding: 0.5rem 5rem;
+}
+.judulKelas h1 {
+    color: #2F2e41
+}
+.infoKelas {
+    display: flex;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.infoKelas a {
+    background-color: #2490cf;
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.infoKelas a:hover {
+    background-color: #0a5d8d;
+}
+
+#kode {
+    margin: 0 28rem;
+    font-size: 1.5rem;
+    font-family: 'quicksand';
+    font-weight: bold;
+    color: #2F2e41;
+}
+
+#kode span {
+    font-weight: bold;
+
+}
+
+#keluarKelas {
+    text-align: right;
+    /* position: relative;
+    position: relative;
+    right: -47rem;
+    top: -18rem; */
+}
+#keluarKelas i {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+.isi {
+    margin: 3rem;
+    padding-bottom: 10rem;
+    box-shadow: 1px 1px 23px 1px #90909075;
+    background-color: #ffffff;
+
+}
+
+.navKelas {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #cccccc3b;
+}
+
+.navKelas h2 {
+    margin: 0 8rem;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    color: #2F2e41;
+    display: flex;
+    flex-direction: column;
+}
+
+.navKelas h2:before {
+    content: "";
+    position: relative;
+    /* background: dodgerblue; */
+    visibility: hidden;
+    top: 38px;
+    width: 100%;
+    border-bottom: 3px solid #2490cf;
+}
+
+.navKelas h2:hover:before {
+    visibility: visible;
+}
+
+.clickNav {
+    border-bottom: 4px solid #2490cf;
+}
+
+.coverNav {
+    width: 15%;
+    /* height: 100%; */
+    background-color: #6CBDEA;
+}
+
+.coverContent {
+    width: 100%;
+    padding-bottom: 12rem;
+}
+
+.Nav {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 50%;
+}
+
+
+ /* style tugas */
+ .tugas {
+     width: 90%;
+     margin: 0 auto;
+     padding-top: 1rem;
+     padding-bottom: 4rem;
+     border-bottom: 3px solid #d0d0d0;
+ }
+
+ .tugas a {
+     text-decoration: none;
+     font-weight: bold;
+     color: #2F2e41;
+ }
+
+ .judulTugas {
+     display: flex;
+ }
+
+ .judulTugas * {
+     margin: 0.5rem 0;
+ }
+
+ .judulTugas h2 {
+    color: #2F2e41;
+    font-size: 2rem;
+    margin-right: 1rem;
+ }
+/* 
+ .judulTugas p {
+    background-color: #fca34c;;
+    font-weight: bold;
+    width: 16%;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+
+ .success{
+    background-color: #01ff41;;
+    font-weight: bold;
+    width: 16%;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .warning{
+    background-color:  #fca34c;;
+    font-weight: bold;
+    width: 16%;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .danger{
+    background-color: #ff0101;;
+    font-weight: bold;
+    width: 16%;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .descTugas p {
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: #999999d6;;
+ }
+
+ .tanggalT {
+     display: flex;
+     /* align-items: center; */
+ }
+
+ .tanggalT p {
+     font-weight: bold;
+     color: #2490cf;
+    font-size: 1.5rem;
+
+ }
+
+ 
+ .tanggalT i {
+    font-weight: bold;
+    color: #2490cf;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.aksi {
+    margin-top: 0.5rem;
+}
+
+
+.kerjakan {
+    float: right;
+}
+
+.kerjakan:before {
+    clear: both;
+}
+
+.aksi .download i {
+    font-weight: normal;
+    color: white;
+    background: #2490CF;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.download a:hover {
+    text-decoration: underline ;
+}
+
+.aksi .download a {
+    display: inline;
+    margin-top: 1rem;
+    margin-right: 2rem;;
+    font-family: sans-serif;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color: #6CBDEA;
+    margin: auto 0!important;
+}
+
+
+.aksi .downloada a {
+    font-weight: bold;
+    background-color:#2490cf ;
+    color: #ffffff;
+}
+
+.kerjakan a {
+    font-size: 1.5rem;
+    font-weight: normal!important;
+    color: #2F2e41;
+    font-family: 'quicksand';
+}
+
+.kerjakan a:hover {
+    text-decoration: underline;
+    color: #2490cf;
+}
+
+.noneS {
+    display: block!important;
+}
+
+.tugasutama, .materi , .ulangan , .chat {
+    display: none;
+    overflow-y: auto;
+    height: 35rem;
+}
+
+.cover {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #2490cf;
+}
+
+.text-msg {
+    padding: 3rem;
+    height: 30rem;
+    overflow-y: scroll;
+}
+.text-msg ul li {
+    list-style-type: none;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    color: #2F2e41;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-left: 2px solid #f7b73c;
+}
+
+.text-msg button {
+    /* margin-top: 1rem; */
+}
+
+.chat form {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+}
+
+.chat form input{
+    width: 90%;
+    padding: 1rem 0;
+    padding-left: 1rem;
+}
+
+.chat form button {
+    width: 10%;
+    background-color: #F7b73c;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.chat form button:hover {
+    background-color: #d59210;;
+}
+
+
+#messages button {
+    padding: 0.5rem;
+    background-color: #1372aa;
+    font-weight: bold;
+    color: white;
+}
+
+#messages button:hover {
+    background-color: #034a74;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+.main form , .cover {
+    width: 90%!important;
+}
+/* //media query responsive */
+
+@media screen and (max-width: 500px) {
+
+    .coverContent {
+        width: 100%;
+    }
+
+    .bannerKelas {
+        padding: 0;
+    }
+
+    .judulKelas {
+        width: 50%;
+        font-size: 1rem;
+        padding: 0.5rem 4rem;
+    }
+
+    .coverContent {
+        padding-bottom: 170px;
+    }
+
+    #kode {
+        margin: 0;
+    }
+
+    .infoKelas a {
+        font-size: 1rem;
+        padding: 1rem 0.3rem;
+    }
+
+    isi {
+        width: 100%;
+        margin: 0;
+    }
+
+    .isi {
+        margin: 0;
+    }
+
+    .navKelas h2 {
+        margin: 0 2rem;
+    }
+
+    .judulTugas p {
+        width: 40%;
+    }
+
+    footer {
+        display: none!important;
+    }
+}
+
+.uploadBuku {
+    width: 100%!important;
+    display: flex;
+    flex-direction: column;
+}
+
+.formUploadBuku {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #39363661;
+    width: 100%!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    padding: 3rem;
+    width: 35%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.iClose {
+    width: 35%;
+}
+
+.iClose img {
+    width: 40%;
+    cursor: pointer;
+    position: relative;
+    left: 370px;
+    top: -40px;
+
+}
+
+.popup input {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #e4e4e4;
+    color: black;
+}
+
+.popup select {
+    padding: 0.5rem;
+    width: 60%;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.popup input[type="file"] {
+    display: block;
+}
+
+.popup label {
+    padding: 6rem 0;
+    margin-top: 1rem;
+    background-color: #e4e4e4;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.popup button {
+    padding: 1rem;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #FF8C1A;
+    color: white;
+}
+
+.display {
+    visibility: hidden;
+    /* display: none!important; */
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
